@@ -2,7 +2,7 @@
 An end-to-end deep learning approach for Outdoor 3d light direction estimation based the integration of a physical illumination model in the pipeline.
 
 
-# How to run this code
+## How to run this code
 1. Open a terminal (powershell on Windows or bash in Linux) and clone this repository:
     ```
     git clone https://github.com/marza1993/LightNormalsEstimation.git
@@ -49,7 +49,7 @@ Different jupyter notebooks (`light_normals_fusion.ipynb`, `light_normals_fusion
 
 
 
-# Acknowledgments
+## Acknowledgments
 This code can be used for reprudcing the results contained in our work accepted (not yet published) on the [CBMI 2024 conference](https://cbmi2024.org/). 
 If the reader wants to use this code in his/her research or projects an acknowledgment to our paper must be included as follows:
 
