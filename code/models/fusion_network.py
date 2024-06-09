@@ -90,12 +90,6 @@ class FusionNetWrap:
 
 
 
-
-
-
-
-
-
 def get_fusion_net(pretrained_weights_file = None, output_names = ['L', 'L_img']):
 
     
@@ -120,66 +114,3 @@ def get_fusion_net(pretrained_weights_file = None, output_names = ['L', 'L_img']
         print("loaded weights from {}".format(pretrained_weights_file))
 
     return fusion_model
-
-
-
-
-
-
-# def get_fusion_net_test2():
-
-#    # RGB input
-#    img_input = Input(shape=(256, 256, 3), name ='RGB_input')
-
-#    # normals net
-#    out_normals = Conv2D(3, (7,7), strides = 1, padding = 'same')(img_input) #NB: no activation
-
-#    # concatenation RGB - normals
-#    RGB_normals_input = Concatenate()([img_input, out_normals])
-
-#    # light net
-#    x = Conv2D(32, (3,3), activation='relu', padding='same')(RGB_normals_input)
-#    x = Flatten()(x)
-#    out_L = Dense(units = 3, activation = 'linear', name = "out_L")(x)
-
-#    # phong level
-#    out_luminance_img = DepthDotProduct()(out_normals, out_L)
-
-#    fusion_model = Model(inputs = [img_input], outputs = [out_luminance_img, out_L])
-
-#    return fusion_model
-
-
-# def get_fusion_net_test():
-
-#    # RGB input
-#    img_input = Input(shape=(256, 256, 3), name ='RGB_input')
-
-#    # normals net
-#    out_normals = Conv2D(3, (7,7), strides = 1, padding = 'same')(img_input) #NB: no activation
-#    normal_net = Model(inputs = [img_input], outputs = [out_normals])
-
-#    # concatenation RGB - normals
-#    # light net
-
-#    RGB_normals_input = Concatenate()([normal_net.input, normal_net.output])
-
-
-#    light_net_input = Input(shape = (256, 256, 6), name = 'RGB_normals')
-
-#    x = Conv2D(32, (3,3), activation='relu', padding='same')(light_net_input)
-#    x = Flatten()(x)
-#    out_L = Dense(units = 3, activation = 'linear', name = "out_L")(x)
-#    light_net = Model(inputs = [light_net_input], outputs = [out_L])
-
-#    # phong level
-#    out_luminance_img = DepthDotProduct()(normal_net.output, light_net(RGB_normals_input))
-
-#    fusion_model = Model(inputs = [img_input], outputs = [light_net(RGB_normals_input), out_luminance_img])
-
-#    return fusion_model
-
-
-
-
-
