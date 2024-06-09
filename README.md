@@ -35,7 +35,7 @@ An end-to-end deep learning approach for Outdoor 3d light direction estimation b
     As an alternative, a suitable docker image with tensorflow and cuda support can be installed and the virtual environment with the required packages can be run inside the generated container (see [https://www.tensorflow.org/install/docker?hl=it](https://www.tensorflow.org/install/docker?hl=it) and [https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow))
 6. To **train** the deep learning model, run the training script as follows:
     ```
-    python .\train_light_normals_fusion.py -d <dataset_path> -m <models_dir_save_path> -b <batch_size> -e <n_epochs> -f <portion_of_dataset_to_use>
+    python .\code\train_light_normals_fusion.py -d <dataset_path> -m <models_dir_save_path> -b <batch_size> -e <n_epochs> -f <portion_of_dataset_to_use>
     ```
     the dataset path must point to a folder with 3 subfolders: *train*, *val* and *test* containing the images and a ground truth file with name *light.csv* with the 3d light direction information for each image.
 
@@ -43,9 +43,9 @@ An end-to-end deep learning approach for Outdoor 3d light direction estimation b
 
 7. To run our trained model to perform inference on test images:
      ```
-    python .\test_light_normals_fusion.py -d <dataset_path> -p <pretrained_weights_path> -s <output_images_save_path>
+    python .\code\test_light_normals_fusion.py -d <dataset_path> -p <pretrained_weights_path> -s <output_images_save_path>
     ```
-
+Different jupyter notebooks (`light_normals_fusion.ipynb`, `light_normals_fusion_fine_tuning.ipynb`, etc.) with both training and testing can be interactively run in a jupyter environment or in visual studio code.
 
 
 
@@ -53,7 +53,16 @@ An end-to-end deep learning approach for Outdoor 3d light direction estimation b
 This code can be used for reprudcing the results contained in our work accepted (not yet published) on the [CBMI 2024 conference](https://cbmi2024.org/). 
 If the reader wants to use this code in his/her research or projects an acknowledgment to our paper must be included as follows:
 
-     ```
-    python .\test_light_normals_fusion.py -d <dataset_path> -p <pretrained_weights_path> -s <output_images_save_path>
-    ```
+```
+@article{LightNormalsEstimation,
+  title={<insert>},
+  author={<insert>},
+  conference={},
+  volume={},
+  number={},
+  pages={},
+  year={2014},
+  publisher={Taylor \& Francis}
+}
+```
 
