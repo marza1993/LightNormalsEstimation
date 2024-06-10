@@ -41,7 +41,7 @@ An end-to-end deep learning approach for Outdoor 3d light direction estimation b
 
     An example dataset that can be used to train our end-to-end deep learning approach is **SynthOutdoor**, a synthetic dataset that we created for training outdoor light estimation models (such as the approach described in this project), which is available [here](https://www.scidb.cn/en/detail?dataSetId=304a5d88dba04226957b6215c171c0c2). Also, the interested reader can re-generate it (or variations of it) by running our [code](https://github.com/marza1993/SynthOutdoor).
 
-7. To run our trained model to perform inference on test images:
+7. To run our trained model to perform **inference** on test images:
      ```
     python .\code\test_light_normals_fusion.py -d <dataset_path> -p <pretrained_weights_path> -s <output_images_save_path>
     ```
