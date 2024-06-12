@@ -58,9 +58,6 @@ If the reader wants to use this code in his/her research or projects an acknowle
   title={PINN-based Approach for Robust 3D Light Direction Estimation in Outdoor Images},
   author={Zanardelli, M., Gohari, M., Leonardi, R., Benini, S.,  Adami, N.},
   conference={21st International Conference on Content-based Multimedia Indexing (CBMI)},
-  volume={},
-  number={},
-  pages={},
   year={2024},
   organization={IEEE}
 }
