@@ -54,15 +54,15 @@ This code can be used for reprudcing the results contained in our work accepted 
 If the reader wants to use this code in his/her research or projects an acknowledgment to our paper must be included as follows:
 
 ```
-@article{LightNormalsEstimation,
-  title={<insert>},
-  author={<insert>},
-  conference={},
+@article{3DLightDirectionEstimation,
+  title={PINN-based Approach for Robust 3D Light Direction Estimation in Outdoor Images},
+  author={Zanardelli, M., Gohari, M., Leonardi, R., Benini, S.,  Adami, N.},
+  conference={21st International Conference on Content-based Multimedia Indexing (CBMI)},
   volume={},
   number={},
   pages={},
-  year={2014},
-  publisher={Taylor \& Francis}
+  year={2024},
+  organization={IEEE}
 }
 ```
 
