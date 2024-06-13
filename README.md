@@ -50,7 +50,7 @@ Different jupyter notebooks (`light_normals_fusion.ipynb`, `light_normals_fusion
 
 
 ## Acknowledgments
-This code can be used for reprudcing the results contained in our work accepted (not yet published) on the [CBMI 2024 conference](https://cbmi2024.org/). 
+This code can be used for reprudcing the results contained in our work submitted to the [CBMI 2024 conference](https://cbmi2024.org/). 
 If the reader wants to use this code in his/her research or projects an acknowledgment to our paper must be included as follows:
 
 ```
