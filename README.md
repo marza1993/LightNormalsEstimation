@@ -1,5 +1,5 @@
 # LightNormalsEstimation
-An end-to-end deep learning approach for Outdoor 3d light direction estimation based the integration of a physical illumination model in the pipeline.
+An end-to-end deep learning approach for Outdoor 3d light direction estimation based on the integration of a physical constraint by means of a simpliefied version of the Phong's illumination model.
 
 
 ## How to run this code
